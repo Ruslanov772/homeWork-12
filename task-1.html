@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 5 > 4 'true'
+        // "ананас" > "яблоко" 'false'
+        // "2" > "12" 'true'
+        // undefined == null 'true'
+        // undefined === null  'false'
+        // null == "\n0\n"  'false'
+        // null === +"\n0\n"  'false'
+
+
+        const userAge = prompt('Сколько тебе лет?');
+        function checkAge(age) {
+            return age > 18 || confirm('Родители разрешили?');
+        }
+
+        const userAge2 = prompt('Сколько тебе лет?');
+        function checkAge2(age) {
+            return age > 18 ? true  : confirm('Родители разрешили?');
+        }
+
+        checkAge(parseInt(userAge));
+        checkAge2(parseInt(userAge2));
+
+
+
+        alert( 6.35.toFixed(1) );
+        alert( Math.round(6.35 * 10) / 10);
+
+        console.log(Math.max( 4, -2, 5, 19, -130, 0, 10. ));
+        console.log(Math.min( 4, -2, 5, 19, -130, 0, 10. ));
+
+        console.log(Math.floor(Math.random() * (100 - 1 + 1)) +1 );
+
+        const number = [];
+        for (let i = 0; i < 10; i++) {
+            let random = Math.floor(Math.random() * 100);
+            number.push(random);
+        }
+        console.log(number);
+
+        const arr = [1, 2, 3, 4, 5];
+        console.log(arr.toString());
+
+
+         // console.log (+true)  1;
+         // console.log (+false) 0;
+    </script>
+</body>
+</html>
